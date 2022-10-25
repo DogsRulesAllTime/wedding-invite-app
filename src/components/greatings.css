@@ -1,0 +1,111 @@
+.greatBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
+    /* background-color: black; */
+    font-size: 22px;
+    color: white;
+    /* padding-top: 50px; */
+    background-image: url('/src/img/1st.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+
+@media screen and (max-width : 1024px) {
+    .greatBlock{
+    background-color: green;
+    }
+    .greaCaption{
+        font-size: 3em;
+    }
+    .greatDescription{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width : 800px) {
+    .greatBlock{
+        background-color: blue;
+    }
+    .greaCaption{
+        font-size: 3em;
+    }
+    .greatDescription{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width : 420px) {
+    .greatBlock{
+        background-color: red;
+    }
+    .greaCaption{
+        font-size: 3em;
+    }
+    .greatDescription{
+        font-size: 1em;
+    }
+}
+@keyframes colorChange {
+    0% {color: white;}
+    50% {color: #3de383}
+    100% {color: white;}
+}
+.greatTxt{
+    width: 80vw;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    color: rgb(237, 217, 38);
+    text-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black,
+    1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+    padding-bottom: 15vh;
+    font-family: Marker Felt, fantasy;
+}
+.greaCaption{
+    margin-bottom: 50px;
+    /* align-items: flex-end; */
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    padding-top: 5v;
+    padding-bottom: 30px;
+    text-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black,
+               1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+    animation: colorChange 3s infinite;
+
+    
+}
+
+.greatDescription{
+    /* flex-direction: row; */
+}
+.arrowBlock{
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: center; */
+    animation: arrowChange 2s infinite;
+}
+
+@keyframes arrowChange{
+    0% {padding-bottom:  0px;}
+    50% {padding-bottom: 10px;}
+    100% {padding-bottom: 0px;}
+}
+.arrow {
+    border: solid rgb(237, 217, 38);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-bottom: 40px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    scale: 3;
+  
+  }
