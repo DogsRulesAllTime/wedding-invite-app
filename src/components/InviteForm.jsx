@@ -2,12 +2,13 @@ import React, {useState} from 'react'
 import "./inviteForm.css"
 import MyInput from './ui/MyInput';
 
-export default function InviteForm({status, refInvite,changeGuest}) {
+export default function InviteForm({status, refInvite,changeGuest,toggleClearState}) {
     const formStyle = status ? "formActive" : "formDisabled"; 
 
     const [additionalGuest, setAdditionalGuest] = useState(false)
     function toggleMove(){
       setAdditionalGuest(!additionalGuest)
+      toggleClearState()
       console.log(additionalGuest);
     }
     const guestStyle = additionalGuest ? "visibble" :"none"

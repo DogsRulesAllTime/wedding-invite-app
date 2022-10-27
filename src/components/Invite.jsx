@@ -12,11 +12,15 @@ export default function Invite({refInvite,status}) {
     setUserData(userData => ({...userData, [field] : value}))
     console.log(userData);
   }
+  function toggleClearState(){
+    setUserData(userData => ({...userData, second : ''}))
+  }
 
   return (
     <div className='inviteBlock'>
         <InviteForm status={status} refInvite={refInvite}
-        changeGuest={changeGuest}/>
+        changeGuest={changeGuest}
+        toggleClearState={toggleClearState}/>
     </div>
 
   )

@@ -1,0 +1,19 @@
+.finalImg{
+    background-image: url('/src/img/1.jpg');
+    /* background-image: url('/src/img/Приглашеение\ Алина.png'); */
+    /* background-position: center; Center the image */
+    background-repeat: no-repeat; 
+    background-size: contain;
+    height: 600px;
+    width: 100%;
+    /* object-fit: fill; */
+    /* width: 100vw; */
+}
+
+.finalTxt{
+    line-height: 25px;
+}
+.time{
+    text-align: left;
+    margin-left: 5vw;
+}
