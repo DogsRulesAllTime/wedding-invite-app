@@ -1,32 +1,22 @@
-// import React, {useState, useRef} from 'react'
+import React, {useState} from 'react'
 // import InviteQuestion from './InviteQuestion'
 import InviteForm from './InviteForm'
 import "./invite.css"
 // import smoothscroll from 'smoothscroll-polyfill';
 
 export default function Invite({refInvite,status}) {
-    // const [form, setForm] = useState(false)
-    // const ref = useRef(null);
-    // const showForm = () =>{
-    //     setForm(true);
-    //     console.log(form);
-    //     setTimeout(()=>moveToBlock(), 500)  
-    // }
-    // const moveToBlock = () => {
-    //   // smoothscroll.polyfill().scrollBy({ top: 100, left: 0, behavior: 'smooth' })
-    //   ref.current?.scrollBy({ top: 100, left: 0, behavior: 'smooth' });
-    //   console.log(123);
-    // };
-    // ({behavior: 'smooth'})
-
-    // const handleClick = () => {
-    //   ref.current?.scrollIntoView({behavior: 'smooth'});
-    // };
+  const [userData, setUserData] = useState({})
+  function changeGuest(field, value){
+    const data = {}
+    data[field] = value
+    setUserData(userData => ({...userData, [field] : value}))
+    console.log(userData);
+  }
 
   return (
     <div className='inviteBlock'>
-        {/* <InviteQuestion showForm={showForm}/> */}
-        <InviteForm status={status} refInvite={refInvite}/>
+        <InviteForm status={status} refInvite={refInvite}
+        changeGuest={changeGuest}/>
     </div>
 
   )

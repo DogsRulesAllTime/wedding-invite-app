@@ -6,6 +6,7 @@ import './App.css';
 import Greatings from './components/Greatings';
 import Info from './components/Info';
 import Invite from './components/Invite';
+import Final from './components/Final';
 
 function App() {
   const refInfo = useRef(null);
@@ -35,6 +36,7 @@ function App() {
       <Info refInfo={refInfo}
        showForm={showForm}/>
       <Invite refInvite={refInvite} status={form}/>
+      <Final/>
     </div>
   );
 }
