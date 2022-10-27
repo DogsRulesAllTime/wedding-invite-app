@@ -1,13 +1,26 @@
-.finalImg{
+.finalImgVictor{
     background-image: url('/src/img/1.jpg');
-    /* background-image: url('/src/img/Приглашеение\ Алина.png'); */
-    /* background-position: center; Center the image */
+    /* background-image: url('/src/img/Приглашеение\ Алина_обработано.png'); */
+    background-position: center; /*Center the image */
     background-repeat: no-repeat; 
     background-size: contain;
-    height: 600px;
+    height: 600px;  
     width: 100%;
-    /* object-fit: fill; */
+    /* object-fit: fill;
     /* width: 100vw; */
+    /* background-repeat: no-repeat; 
+    background-size: contain;
+    height: 650px;  /* Alina */
+    
+}
+
+.finalImgAlina{
+    background-image: url('/src/img/Приглашеение\ Алина_обработано.png');
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: contain;
+    height: 650px;  /* Alina */
+    width: 100%;
 }
 
 .finalTxt{
@@ -16,4 +29,10 @@
 .time{
     text-align: left;
     margin-left: 5vw;
+}
+.show{
+display: block;
+}
+.hide{
+    display: none;
 }

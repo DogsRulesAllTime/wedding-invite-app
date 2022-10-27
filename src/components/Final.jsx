@@ -1,9 +1,11 @@
 import React from 'react'
 import "./final.css"
-export default function Final() {
+export default function Final({sex, final}) {
+  const imgClass = sex? "finalImgVictor" : "finalImgAlina"
+  const blockStatus = final ? "show" : "hide"
   return (
-    <div>
-        <div className="finalImg">
+    <div className={`finalBlock ${blockStatus}`}>
+        <div className={imgClass}>
             {/* <img src="../img/1.jpg" alt="12" /> */}
         </div>
         <div className="finalTxt">
