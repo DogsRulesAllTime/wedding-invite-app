@@ -1,18 +1,19 @@
 import React from "react";
 import "./info.css";
 
-export default function Info({ gg }) {
+export default function Info({ refInfo, showForm}) {
+
+
   return (
-    <div className="infoBlock" ref={gg}>
+    <div className="infoBlock" ref={refInfo}>
       <div className="infoCaption">Привет</div>
       <div className="infoTxt">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis sint
-        ut totam veniam quibusdam odio, voluptatibus reiciendis facere iusto
-        dolores eaque libero rem accusantium. Labore error perspiciatis earum
-        minima ut? Placeat minus nihil, corrupti iste quis maxime voluptatum
-        vero quidem vel impedit veritatis sunt recusandae doloremque adipisci
-        praesentium provident voluptate! Architecto officiis id sed accusantium
-        doloremque adipisci ab suscipit voluptate.
+      В первую пятницу декабря мы отменяем зимнюю хандру и приглашаем тебя провести один день лета зимой на нашей <span>свадьбе. </span> 
+Пляжная атмосфера, летняя музыка, прохладительные напитки, жаркие танцы и много другое…
+      </div>
+      <div className="question">
+      <div className="questionTxt">Ты с нами?</div>
+      <button onClick={showForm}>ДА!</button>
       </div>
     </div>
   );

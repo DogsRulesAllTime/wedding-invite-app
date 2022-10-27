@@ -1,10 +1,10 @@
 import React from 'react'
 import "./inviteForm.css"
 
-export default function InviteForm({status, refProps}) {
+export default function InviteForm({status, refInvite}) {
     const formStyle = status ? "formActive" : "formDisabled"; 
   return (
-    <div className={formStyle} ref={refProps}>
+    <div className={formStyle} ref={refInvite}>
         <p>Заполни форму</p>
         <label  htmlFor="">Имя</label>
         <input type="text" name="" id="" />

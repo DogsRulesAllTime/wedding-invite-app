@@ -4,8 +4,7 @@ import "./greatings.css"
 export default function Greatings({handleClick}) {
   return (
     <div className='greatBlock'>
-        <div className="greatTxt">Как часто зимой ты мечтаешь о лете? 
-Мы отменяем зимнюю хандру и приглашаем тебя провести один день лета зимой на нашей свадьбе </div>
+        <div className="greatTxt">Как часто зимой ты мечтаешь о лете?</div>
         <div className="greaCaption">02.12.22</div>
          <div className="arrowBlock" id='arrowId' onClick={handleClick}>
          <i className="arrow" />
