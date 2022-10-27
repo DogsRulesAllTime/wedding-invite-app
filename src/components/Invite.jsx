@@ -1,8 +1,8 @@
-import React, {useState, useRef} from 'react'
-import InviteQuestion from './InviteQuestion'
+// import React, {useState, useRef} from 'react'
+// import InviteQuestion from './InviteQuestion'
 import InviteForm from './InviteForm'
 import "./invite.css"
-import smoothscroll from 'smoothscroll-polyfill';
+// import smoothscroll from 'smoothscroll-polyfill';
 
 export default function Invite({refInvite,status}) {
     // const [form, setForm] = useState(false)
