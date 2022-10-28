@@ -15,7 +15,11 @@ export default function Invite({refInvite,status,toggleSex,showFinalBlock,handle
     console.log(userData);
   }
   function toggleClearState(){
-    setUserData(userData => ({...userData, second : ''}))
+    setUserData(userData => {
+      // ({...userData, second : ''}
+      const {second, ...rest} = userData;
+      return rest
+    });
   }
 
 

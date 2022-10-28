@@ -22,6 +22,10 @@ export default function InviteForm({
   }
   const guestStyle = additionalGuest ? "visibble" : "none";
 
+  const isDisable = (Object.keys(userData).length === 0 || userData['first'] === '') ? "disabled" : ''
+  const btnSendStatus = (isDisable==="disabled")? "myBtn-disable" : null
+  console.log(isDisable==="disabled");
+  console.log(userData);
   return (
     <div className={formStyle} ref={refInvite}>
       <h2 className="inviteCaption">Заполни форму</h2>
@@ -45,7 +49,8 @@ export default function InviteForm({
         changeGuest={changeGuest}
         name={"second"}
       />
-      <button className="myBtn" onClick={()=>showFinalBlock(userData)}>ОТПРАВИТЬ</button>
+      <button disabled={isDisable} className={`myBtn ${btnSendStatus}`} onClick={()=>showFinalBlock(userData)} 
+      >ОТПРАВИТЬ</button>
     </div>
   );
 }

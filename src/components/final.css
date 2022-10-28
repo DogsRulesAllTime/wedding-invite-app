@@ -25,6 +25,11 @@
 
 .finalTxt{
     line-height: 25px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    width: 90vw;
+    margin: auto;
+    
 }
 .time{
     text-align: left;
@@ -35,4 +40,18 @@ display: block;
 }
 .hide{
     display: none;
+}
+.finalBlock{
+    background: rgb(157,121,181);
+background: -moz-linear-gradient(0deg, rgba(157,121,181,1) 0%, rgba(252,135,135,1) 58%, rgba(255,255,255,1) 100%);
+background: -webkit-linear-gradient(0deg, rgba(157,121,181,1) 0%, rgba(252,135,135,1) 58%, rgba(255,255,255,1) 100%);
+background: linear-gradient(0deg, rgba(157,121,181,1) 0%, rgba(252,135,135,1) 58%, rgba(255,255,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9d79b5",endColorstr="#ffffff",GradientType=1);
+}
+.map{
+    /* display: none; */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 90vw;
+    margin: auto;
 }

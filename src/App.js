@@ -58,7 +58,7 @@ function App() {
 
   function sendData(data){
     // e.preventDefault();
-    const guestData = {...data, date: new Date().toLocaleDateString()};
+    const guestData = {...data, date: new Date().toLocaleString()};
     // console.log(nameData.current.value,surnameData.current.value );
     console.log('guestData: ', guestData);
     addDoc(collection(db, "Guests"), guestData);
