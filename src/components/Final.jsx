@@ -13,7 +13,7 @@ export default function Final({sex, final}) {
 Теперь тебе доступна информация, как и где всё будет происходить <br/> 
 <b>Место встречи: </b> <br/>
 Московская обл., Одинцовский район, село Ромашково ул. Раздоровская д.45.<br/>
-<iframe  className="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A7881f296287cea350e296c8cee43cbaeb7af2ba276ef2461bf00981aaf8b6c4b&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+<iframe  className="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A7881f296287cea350e296c8cee43cbaeb7af2ba276ef2461bf00981aaf8b6c4b&amp;source=constructor" width="500" height="400" frameborder="0" title="mapFrame"></iframe>
 
 {/* (яндекс карту)  */}
 <b>План праздника:</b > <br/>
