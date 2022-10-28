@@ -48,7 +48,14 @@
   padding-right: 10px;
 }
 .ml-fix{
-  margin-left: -65px;
+  margin-left: -200px;
+}
+
+.blue{
+  color: rgb(40, 58, 189);
+}
+.pink{
+  color: rgb(248, 146, 163);
 }
 
 

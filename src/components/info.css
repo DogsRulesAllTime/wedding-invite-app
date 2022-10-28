@@ -31,13 +31,13 @@
     /* opacity: 11; */
     position: relative;
     font-weight: bold;
-    /* font-family: Comic Sans MS, Comic Sans, cursive; */
+    font-family: Comic Sans MS, Comic Sans, cursive;
     color: rgb(36, 60, 81);
 }
 .infoTxt{
     font-size: 24px;
     /* font-family: Bradley Hand, cursive; */
-    /* font-family: Comic Sans MS, Comic Sans, cursive; */
+    font-family: Comic Sans MS, Comic Sans, cursive;
     font-weight: bold;
     position: relative;
     width: 87vw;

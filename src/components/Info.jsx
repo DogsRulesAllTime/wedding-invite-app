@@ -8,7 +8,7 @@ export default function Info({ refInfo, showForm}) {
     <div className="infoBlock" ref={refInfo}>
       <div className="infoCaption">Привет</div>
       <div className="infoTxt">
-      В первую пятницу декабря мы отменяем зимнюю хандру и приглашаем тебя провести один день лета зимой на нашей <span className="wedWord">Свадьбе. </span> 
+      В первую пятницу декабря мы отменяем зимнюю хандру и приглашаем тебя провести один день лета зимой на нашей <span className="wedWord">Свадьбе.</span> <br /> 
 Пляжная атмосфера, летняя музыка, прохладительные напитки, жаркие танцы и много другое…
       </div>
       <div className="question">

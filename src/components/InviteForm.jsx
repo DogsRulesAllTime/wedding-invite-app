@@ -36,9 +36,9 @@ export default function InviteForm({
         </div>
 
         <div className="toggleBlock mt-20 ml-fix">
-          <div className="toggleTxt">М</div>
+          <div className="toggleTxt blue" >Мальчик</div>
           <MyToggle func={toggleSex} />
-          <div className="toggleTxt">Ж</div>
+          <div className="toggleTxt pink">Девочка</div>
         </div>
       </div>
       <MyInput label={"Ваше имя"} changeGuest={changeGuest} name={"first"} />
