@@ -43,6 +43,7 @@ display: block;
 }
 .finalBlock{
     font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 24px;
     background: rgb(157,121,181);
 background: -moz-linear-gradient(0deg, rgba(157,121,181,1) 0%, rgba(252,135,135,1) 58%, rgba(255,255,255,1) 100%);
 background: -webkit-linear-gradient(0deg, rgba(157,121,181,1) 0%, rgba(252,135,135,1) 58%, rgba(255,255,255,1) 100%);
