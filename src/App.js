@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { scrollIntoView } from "seamless-scroll-polyfill";
 import {db} from "./firebase"
-import {addDoc, getDocs, doc, collection} from '@firebase/firestore'
+import {addDoc, collection} from '@firebase/firestore'
 
 import "./App.css";
 import Greatings from "./components/Greatings";
