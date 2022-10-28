@@ -1,5 +1,7 @@
 import React, { useRef, useState } from "react";
 import { scrollIntoView } from "seamless-scroll-polyfill";
+import {db} from "./firebase"
+import {addDoc, getDocs, doc, collection} from '@firebase/firestore'
 
 import "./App.css";
 import Greatings from "./components/Greatings";
@@ -47,11 +49,23 @@ function App() {
     setSex(!sex);
     console.log(sex);
   }
-  function showFinalBlock() {
+  function showFinalBlock(data) {
     setFinal(true);
     console.log("setFinal: ", final);
     setTimeout(() => handleClickToFinal(), 500);
+    sendData(data)
   }
+
+  function sendData(data){
+    // e.preventDefault();
+    const guestData = {...data, date: new Date().toLocaleDateString()};
+    // console.log(nameData.current.value,surnameData.current.value );
+    console.log('guestData: ', guestData);
+    addDoc(collection(db, "Guests"), guestData);
+}
+  
+
+
   return (
     <div className="App">
       <Greatings handleClick={handleClick} />

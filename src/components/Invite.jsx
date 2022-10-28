@@ -18,6 +18,7 @@ export default function Invite({refInvite,status,toggleSex,showFinalBlock,handle
     setUserData(userData => ({...userData, second : ''}))
   }
 
+
   return (
     <div className='inviteBlock'>
         <InviteForm status={status} refInvite={refInvite}
@@ -26,6 +27,7 @@ export default function Invite({refInvite,status,toggleSex,showFinalBlock,handle
         toggleSex={toggleSex}
         showFinalBlock={showFinalBlock}
         handleClickToFinal={handleClickToFinal}
+        userData={userData}
         />
     </div>
 

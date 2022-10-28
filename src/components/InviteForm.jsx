@@ -10,6 +10,7 @@ export default function InviteForm({
   toggleClearState,
   toggleSex,
   showFinalBlock,
+  userData
 }) {
   const formStyle = status ? "formActive" : "formDisabled";
 
@@ -44,7 +45,7 @@ export default function InviteForm({
         changeGuest={changeGuest}
         name={"second"}
       />
-      <button className="myBtn" onClick={showFinalBlock}>ОТПРАВИТЬ</button>
+      <button className="myBtn" onClick={()=>showFinalBlock(userData)}>ОТПРАВИТЬ</button>
     </div>
   );
 }
